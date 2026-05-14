@@ -1,10 +1,19 @@
-import React from 'react'
+import {Route, Routes, useLocation} from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
 
 const App = () => {
+
+    const isOwnerPath = useLocation().pathname.includes("owner")
+
   return (
     <div>
-        <h1 className='font-sora'>Hello</h1>
-        <h1>Hello</h1>
+        {!isOwnerPath && <Navbar/>}
+        <div className='min-h-[70svh]'>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+          </Routes>
+        </div>
     </div>
   )
 }
