@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 const ProductCard = ({art, index}) => {
   return (
     <>
-        <Link to={'/arts/' + art._id} onClick={()=> scrollTo(0, 0)} key={art._id}  className="relative max-w-70 w-full rounded-xl overflow-hidden bg-white text-gray-500/90 shadow-[0px_4px_4px_rgba(0,0,0,0.05)]">
+        <Link to={'/arts/' + art._id} onClick={()=> scrollTo(0, 0)} key={art._id}  className="max-w-70 w-full rounded-lg overflow-hidden bg-white text-gray-500/90 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
+        <div className="relative">
           <img src={art.images[0]} alt="" />
 
-          { index % 2 === 0 && <p className="px-3 py-1 absolute top-3 left-3 text-xs bg-white text-gray-800 font-medium rounded-full">Best Seller</p>}
+          { index % 2 === 0 && <p className="px-3 py-1 absolute top-5 left-3 text-sm bg-white text-gray-800 font-medium rounded-full z-index-[999]">Best Seller</p>}</div>
 
             <div className="p-5">
               <div className="flex items-center justify-between gap-1">
@@ -17,7 +18,7 @@ const ProductCard = ({art, index}) => {
 
               <div className="flex items-center justify-between mt-4">
                 <p className="text-xl text-gray-800">${art.price}</p>
-                <button className="px-4 py-2 text-sm font-medium border border-gray-300 rounded hover:bg-gray-50 transition-all cursor-pointer">Buy Now</button>
+                <button className="px-4 py-2 text-sm font-medium rounded hover:bg-primary/80 transition-all cursor-pointer bg-primary text-white">Buy Now</button>
               </div>
             </div>
         </Link>

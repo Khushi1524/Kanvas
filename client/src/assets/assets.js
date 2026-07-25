@@ -1,33 +1,17 @@
 import hero from './HeroImg.png';
-import logo from './logo.png';
-import logoWhite from './logo-white.png';
-import logoShort from './logo-short.png';
-import logoWithoutBg from './logo-without-bg.png';
-import logoWithoutBg1 from './logo-without-bg1.png';
+import logo from './newLogo.png';
 import search from './Search.png';
 import track from './Track.png';
 import paint from './paint.png';
-import searchsvg from './search.svg';
-import tracksvg from './tracking.svg';
-import paintsvg from './paint.svg';
 import featuredArt from './featuredArt.png';
-import CTA from './ctaa.png';
 
 export const assets = {
     hero,
     logo,
-    logoWhite,
-    logoWithoutBg,
-    logoWithoutBg1,
-    logoShort,
     search,
     track,
     paint,
-    searchsvg,
-    tracksvg,
-    paintsvg,
     featuredArt,
-    CTA
 }
 
 export const dummyArts = [
@@ -45,7 +29,7 @@ export const dummyArts = [
     _id: "2",
     name: "Ocean Dreams",
     price: 180,
-    images: [assets.hero],
+    images: [assets.featuredArt],
     category: "Nature",
     rating: 4.8,
     artist: "Kanvas Studio",
@@ -55,7 +39,7 @@ export const dummyArts = [
     _id: "3",
     name: "Silent Forest",
     price: 95,
-    images: [assets.CTA],
+    images: [assets.featuredArt],
     category: "Landscape",
     rating: 4.3,
     artist: "Artify",

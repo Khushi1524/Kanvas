@@ -1,17 +1,12 @@
 import { assets } from "../assets/assets";
+import SectionTitle from "./SectionTitle";
 
 const Featured = () => {
   return (
     <section className="bg-primary/20 py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-9">
-          <h1 className="text-4xl md:text-[40px] font-medium text-zinc-900">
-           Our Featured Artworks.
-          </h1>
-          <p className="text-base text-zinc-600 max-w-sm mx-auto mt-3">
-            Top-picked artworks for quality and originality..
-          </p>
-        </div>
+
+        <SectionTitle title="Exclusive Offer Artworks." subtitle="Top-picked artworks for quality and originality." />
 
         <div className="flex flex-col gap-5">
           <div className="flex flex-col md:flex-row gap-5">
@@ -22,7 +17,7 @@ const Featured = () => {
                 className="w-full h-48 md:h-full md:w-[45%] object-cover rounded-2xl"
               />
               <div className="flex flex-col mt-2">
-                <div className="size-11 bg-zinc-900 rounded-lg flex items-center justify-center mb-5">
+                <div className="size-11 bg-primary rounded-lg flex items-center justify-center mb-5">
                   <svg
                     width="24"
                     height="24"
@@ -50,7 +45,7 @@ const Featured = () => {
             </div>
 
             <div className="md:w-[40%] bg-white rounded-xl hover:shadow-sm transition-all duration-300 px-6 py-6 md:pt-7">
-              <div className="size-11 bg-zinc-900 rounded-lg flex items-center justify-center mb-5">
+              <div className="size-11 bg-primary rounded-lg flex items-center justify-center mb-5">
                 <svg
                   width="24"
                   height="24"
@@ -87,7 +82,7 @@ const Featured = () => {
 
           <div className="flex flex-col md:flex-row gap-5">
             <div className="md:w-[40%] bg-white rounded-xl hover:shadow-sm transition-all duration-300 px-6 py-6 md:pt-7">
-              <div className="size-11 bg-zinc-900 rounded-lg flex items-center justify-center mb-5">
+              <div className="size-11 bg-primary rounded-lg flex items-center justify-center mb-5">
                 <svg
                   width="24"
                   height="24"
@@ -128,7 +123,7 @@ const Featured = () => {
                 className="w-full h-48 md:h-full md:w-[45%] object-cover rounded-2xl"
               />
               <div className="flex flex-col mt-2">
-                <div className="size-11 bg-zinc-900 rounded-lg flex items-center justify-center mb-5">
+                <div className="size-11 bg-primary rounded-lg flex items-center justify-center mb-5">
                   <svg
                     width="24"
                     height="24"
